@@ -5,6 +5,42 @@
         Weston Outdoors
         </title>
 <style>
+
+    #navi body {margin:0;}
+
+#navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navi {
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+#navi li {
+  float: left;
+}
+
+#navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navi li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#navi .active {
+  background-color: #4CAF50;
+}
  h1{
      color: black;
  }
@@ -113,38 +149,7 @@
                 border-radius: 30px;
                 height: 220px
             }
-#navi body {margin:0;}
 
-#navi ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-#navi li {
-  float: left;
-}
-
-#navi li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#navi li a:hover:not(.active) {
-  background-color: #111;
-}
-
-#navi .active {
-  background-color: #4CAF50;
-}
 </style>
     </head>
     <body style="background-image:url(grass.jpg)">
