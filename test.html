@@ -113,12 +113,17 @@
                 border-radius: 30px;
                 height: 220px
             }
-            #navi ul {
+#navi body {margin:0;}
+
+#navi ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #navi li {
@@ -133,8 +138,12 @@
   text-decoration: none;
 }
 
-#navi li a:hover {
+#navi li a:hover:not(.active) {
   background-color: #111;
+}
+
+#navi .active {
+  background-color: #4CAF50;
 }
 </style>
     </head>
