@@ -1,10 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <Title> Weston Outdoors </Title>
+<head>
+    <title>
+        Weston Outdoors
+        </title>
+<style>
+ h1{
+     color: black;
+ }
 
- <style>
-        h1  {
+ h2{
+
+ }
+ .logo img {
+     margin: auto;
+     padding: auto;
+ }
+
+
+         h1  {
            font-family:monospace;
             color:blue;
 
@@ -26,7 +40,7 @@
                 margin: auto;
                 background: white;
                 border-radius:40px;
-                border: 5px solid #190451;
+                border: 4px solid black;
 
           }
 
@@ -34,12 +48,19 @@
 
           }
 
-          .sidebar {  margin-right: 20px;
-                padding: 10px;
+          .sidebar {
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
           }
 
-          .sidebar img {width: 150px;
-          align: center;}
+          .sidebar img {width: aspectratio;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+          }
 
           nav {
                 background: rgb(black);
@@ -73,30 +94,82 @@
             .content {
                 margin-right:30px;
             }
+            #info{
+
+
+            }
+            #info p {
+                padding: 3px;
+                border: 1px solid black;
+                text-align:center;
+            }
+            #time{
+                text-align:center;
+                border: 1px solid black;
+                margin-bottom: 30px;
+            }
+            .front-pic img {
+                padding: 15px;
+                border-radius: 30px;
+                height: 220px
+            }
+            #navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navi li {
+  float: left;
+}
+
+#navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navi li a:hover {
+  background-color: #111;
+}
 </style>
-     </head>
-
-
-
+    </head>
     <body style="background-image:url(grass.jpg)">
-           <div id="all-contents">
-                <nav>
-<h1> hello im bren >:D </h1>
-                </nav>
-                <main>
-                <div class="sidebar">
+        <div id="navi">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
+<div id="all-contents">
 
-                     <img src="http://canecuttersbaseball.com.ismmedia.com/ISM3/thumbcache/1d9449a04c9f20f4c260889080819cba.300.jpg">
+            <div class="sidebar">
+                  <img src="http://canecuttersbaseball.com.ismmedia.com/ISM3/thumbcache/1d9449a04c9f20f4c260889080819cba.300.jpg">
+            </div>
 
+            <div id="info">
+                 <br>
+                 <p>Call us at (337) 330-4700 </p>
+                 <p style="color:blue;">1000 Bonnin Rd<br>Lafayette, LA 70508</p>
+                 <div id="time">
+                     <p1><strong>Open Hours</strong></p1>
+                     <li> Mon-Fri 8am-5pm</li>
+                     <li> Sat 8am-12pm</li>
 
                 </div>
+            </div>
+            <div class="front-pic">
+            <img src="front.jpg">
+            <img src="front2.jpg">
+            </div>
+</div><!-- All contents-->
 
-                <div class="content">
+</body>
 
-
-                     </div>
-
-            </main>
-        </div>
-    </body>
 </html>
